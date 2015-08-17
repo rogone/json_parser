@@ -6,6 +6,8 @@ this is my joson parser
 - leading zeros
 - hex
 - oct
+ 
 ###strings
 - tab ,line break or any with backslash
+
 ###igore anything after close
