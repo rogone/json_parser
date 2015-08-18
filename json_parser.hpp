@@ -290,7 +290,10 @@ namespace json_parser
 				parse_null();
 				break;
 			default:
-				parse_number();
+				if (char_in(begin_c, "+-0123456789"))
+					parse_number();
+				else
+					throw PARSER_EXCEPTION("Unknown Value Type.");
 				break;
 			}
 			return 0;
